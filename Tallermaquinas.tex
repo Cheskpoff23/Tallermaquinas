@@ -78,75 +78,96 @@
 \begin{titlepage}
 	\centering
 	\vspace{2.5cm}
-	{\scshape \Large TALLER DE METROLOGÍA APLICADA\par}
+	{\scshape \Large TALLER DE MÁQUINAS TÉRMICAS\par}
 	\vspace{5cm}
 	\textbf\large\scshape{\par}
 	\vspace{0.5cm}
 	{\Large Vergara Pareja Gustavo\par}
+    {\Large Ramos Flórez Miguel\par}
 	\vspace{5cm}
-	{\scshape\Large Miguel Ángel Lancheros\par}
+	{\scshape\Large Bernardo J. Luján E. \par}
 	\vspace{0.3cm}
-	{\scshape\Large Metrología y Control de Calidad - G1IM \par}
+	{\scshape\Large Máquinas Térmicas - G2IM \par}
 	\vspace{0.3cm}
 	{\scshape\Large Universidad de Córdoba\par}
 	\vspace{0.3cm}
-	{\Large 7 de Diciembre de 2023 \par}
+	{\Large 1 de Octubre de 2024 \par}
 \end{titlepage}
 \tableofcontents
 \newpage
-\section{Fabricación de automoviles}
-\begin{itemize}
-	\item La fabricación de automóviles es un proceso complejo que involucra una gran cantidad de pasos y operaciones. Desde la extracción de materias primas hasta el ensamblaje final, el proceso de fabricación de automóviles debe ser preciso y controlado para garantizar que los productos cumplan con los requisitos de calidad y seguridad.
+    \section{1a}
+    Para la potencia producida por la turbina utilizamos el concepto de Eficiencia Isentrópica de turbinas, tomando como insignificantes los cambios en las energías cinética y potencial asociados con
+    el flujo de vapor de agua que circula a través de la máquina en comparación con el cambio en la entalpía. Así entonces:
+    \begin{equation*}
+        n_T = \frac{h_1-h_{2a}}{h_1-h_{2s}}
+        \end{equation*}        
+        \begin{figure}[H] % 'h' indica que LaTeX debe intentar colocar la figura aquí
+            \centering
+            \includegraphics[width=1\textwidth]{equations.png} % Ajusta el ancho según necesites
+            \caption{Datos y Ecuaciones en EES}
+            \label{fig:mi_imagen}
+        \end{figure}
+        \newpage
+        Para el estado 1 y 2:
+        \begin{figure}[h!] % 'h' indica que LaTeX debe intentar colocar la figura aquí
+            \centering
+            \includegraphics[width=1\textwidth]{arrays1.png} % Ajusta el ancho según necesites
+            \caption{Estado 1 y Estado 2 en EES}
+            \label{fig:mi_imagen}
+        \end{figure}
 
-	El sistema metrológico es un conjunto de principios, definiciones, normas, métodos de medición y aseguramiento de la calidad que se utilizan para garantizar la precisión y la trazabilidad de las mediciones. El sistema metrológico es esencial para la fabricación de automóviles, ya que permite a los fabricantes garantizar que los productos cumplan con las especificaciones y los requisitos de seguridad.
-\end{itemize}
-\section{Normas que aplican}
-Las normas que aplican al sistema metrológico en la fabricación de automóviles incluyen:
-
-	\begin{itemize}
-		\item ISO 9001:2015 - Sistema de gestión de la calidad
-		\item ISO 14001:2015 - Sistema de gestión ambiental
-		\item ISO 45001:2018 - Sistema de gestión de la seguridad y salud ocupacional
-		\item IATF 16949:2016 - Sistema de gestión de la calidad para la industria automotriz
-	\end{itemize}
-	
-\section{Equipos de medición}
-Los equipos de medición que se utilizan en la fabricación de automóviles incluyen:
-
-\begin{itemize}
-	\item Balanzas
-	\item Micrómetros
-	\item Calibradores
-	\item Medidores de tensión (UTM)
-	\item Medidores de resistencia
-	\item Medidores de temperatura
-	\item Medidores de presión
-\end{itemize}
-\section{Tabla de unidades y conversiones}
-La siguiente tabla muestra algunas de las unidades y conversiones que se utilizan en la fabricación de automóviles:
-\begin{table}[!ht]
+        La solucion arrojada por EES, luego de despejar:
+        \begin{figure}[h!] % 'h' indica que LaTeX debe intentar colocar la figura aquí
+            \centering
+            \includegraphics[width=1.1\textwidth]{solutions1.png} % Ajusta el ancho según necesites
+            \caption{Solución en EES}
+            \label{fig:mi_imagen}
+        \end{figure}
+\newpage
+    \section*{1b}
+    A continuación con herramientas de EES mostraremos ambos procesos sobre un diagrama h-s del agua, resaltamos las curvas isobáricas de 4 MPa y 10 kPa. Utilizando las herramientas <<Property Plot>> y <<Overlay Plot>> tenemos:
+    \begin{figure}[h!] % 'h' indica que LaTeX debe intentar colocar la figura aquí
+        \centering
+        \includegraphics[width=1\textwidth]{hs.jpg} % Ajusta el ancho según necesites
+        \caption{Gráfica h vs s}
+        \label{fig:mi_imagen}
+    \end{figure}
+\newpage
+\section{a,b}
+Con el razonamiento y datos similares a los del primer punto y el concepto de relación de presiones en una turbina, lógica de programación (ciclos), el manual y el software de EES (Ciclo REPEAT). \singlespacing Procedemos a resolver el problema iterativo.
+\begin{figure}[h!] % 'h' indica que LaTeX debe intentar colocar la figura aquí
     \centering
-    \begin{tabular}{|l|l|l|}
-    \hline
-        Unidad & Definición & Conversión \\ \hline
-        Metro (m) & Unidad básica de longitud & 1 m = 100 cm = 1000 mm = 39,37 in \\ \hline
-        Kilogramo (kg) & Unidad básica de masa & 1 kg = 1000 g = 2,2046226218488 lb \\ \hline
-        Segundo (s) & Unidad básica de tiempo & 1 s = 1/60 min = 1/3600 h \\ \hline
-        Kelvin (K) & Unidad básica de temperatura & 0 °C = 273,15 K \\ \hline
-        Pascal (Pa) & Unidad básica de presión & 1 Pa = 1 N/m^{2} \\ \hline
-        Voltio (V) & Unidad básica de tensión & 1 V = 1 J/C \\ \hline
-        Ohm (\Omega) & Unidad básica de resistencia & 1 \Omega  = 1 V/A \\ \hline
-    \end{tabular}
-\end{table}
-\section{Ejemplo numérico}
+    \includegraphics[width=0.8\textwidth]{ecuations222.jpg} % Ajusta el ancho según necesites
+    \caption{Datos y Ecuaciones 2 en EES}
+    \label{fig:mi_imagen}
+\end{figure}
+\newpage
+La solución arrojada para la eficiencia Isentrópica total y potencia total del sistema, por EES, luego de despejar para N = 4 Turbinas:
+\begin{figure}[h!] % 'h' indica que LaTeX debe intentar colocar la figura aquí
+    \centering
+    \includegraphics[width=1.1\textwidth]{solutions2.png} % Ajusta el ancho según necesites
+    \caption{Solución 2 en EES}
+    \label{fig:mi_imagen}
+\end{figure}
+\section*{2c.}
+A continuación con herramientas de EES mostraremos los procesos sobre un diagrama h-s del agua, resaltamos las curvas isobáricas entre 4 MPa y 10 kPa. Utilizando las herramientas <<Property Plot>> y <<Overlay Plot>> tenemos:
+\begin{figure}[h!] % 'h' indica que LaTeX debe intentar colocar la figura aquí
+    \centering
+    \includegraphics[width=1\textwidth]{h-s_4___TURBINAS.jpg} % Ajusta el ancho según necesites
+    \caption{Gráfica para N=4 en EES}
+    \label{fig:mi_imagen}
+\end{figure}
 
-
-Un fabricante de automóviles está fabricando un neumático que debe tener un diámetro de 400,6 mm. El fabricante utiliza una regla para medir el diámetro del neumático y obtiene una lectura de 405 mm. Para verificar la precisión de la medición, el fabricante utiliza un micrómetro y obtiene una lectura de 401 mm.
-
-La diferencia entre las dos mediciones es de 0,4 mm. Esta diferencia es menor que la tolerancia permitida de 1 mm, por lo que el neumático cumple con las especificaciones.
-
-En este ejemplo, el sistema metrológico ha permitido al fabricante garantizar que el neumático cumple con las especificaciones de tamaño.
+\section*{2d.}
+A continuación con herramientas de EES mostraremos un gráfico de la eficiencia isentrópica global en función del número de procesos de expansión (usando escala logarítmica en x y N de 1 a 100). Utilizando las herramientas <<X-Y Plot>> y <<Parametric Table>> tenemos:
+\begin{figure}[h!] % 'h' indica que LaTeX debe intentar colocar la figura aquí
+    \centering
+    \includegraphics[width=1\textwidth]{Eficiencia_vs_Número_de_Turbinas2.jpg} % Ajusta el ancho según necesites
+    \caption{Gráfica Eficiencia vs Número de Turbinas en EES}
+    \label{fig:mi_imagen}
+\end{figure}
+\newpage
 \bibliographystyle{apacite}
 \nocite{*}
-\bibliography{cartas-por-atributos}
+\bibliography{termodi}
 \end{document}

@@ -1,0 +1,47 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+{\c C}engel%
+}{%
+{\c C}engel%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+Cengel2012-bi}
+\APACinsertmetastar {%
+Cengel2012-bi}%
+\begin{APACrefauthors}%
+{\c C}engel, Y\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2012}.
+\newblock
+\APACrefbtitle {Termodin{\'a}mica} {Termodin{\'a}mica}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dash%
+}{%
+Dash%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Dash2014-jf}
+\APACinsertmetastar {%
+Dash2014-jf}%
+\begin{APACrefauthors}%
+Dash, S\BPBI K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2014}.
+\newblock
+\APACrefbtitle {Engineering equation solver: Application to engineering and
+  thermal engineering problems} {Engineering equation solver: Application to
+  engineering and thermal engineering problems}.
+\newblock
+\APACaddressPublisher{Oxford, Inglaterra}{Alpha Science International}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
